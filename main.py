@@ -1,8 +1,8 @@
-import tictactoe
+from tictactoe import TicTacToe
     
 def main():
     """ create an instance of TicTacToe class"""
-    t = tictactoe.TicTacToe()
+    t = TicTacToe()
         
     #get the value of whose turn it is
     board_state = t.cur_state
