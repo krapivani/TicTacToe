@@ -1,5 +1,5 @@
 from enum import Enum
-import random
+
 
 class TicTacToe:
     class STATES(Enum):
@@ -14,7 +14,7 @@ class TicTacToe:
         """creat a blank board of size 3X3 """
         self.board = [[' ', ' ', ' '], [' ', ' ', ' '], [' ', ' ', ' ']]
         """ randomly select whose turn it is o or x """
-        self.cur_state = random.choice([self.STATES.NAUGHT_TURN, self.STATES.CROSS_TURN])
+        
 
     def place_marker(self, symbol, row, column):
         """assing the given symbol to board with given row,column

@@ -1,11 +1,12 @@
 from tictactoe import TicTacToe
-    
+import random
+
 def main():
     """ create an instance of TicTacToe class"""
     t = TicTacToe()
         
     #get the value of whose turn it is
-    board_state = t.cur_state
+    board_state = random.choice([t.STATES.NAUGHT_TURN, t.STATES.CROSS_TURN])
 
     """ use a while loop to intrectively play TicTacToe and save the board state
         run loop until someone wins or its draw
