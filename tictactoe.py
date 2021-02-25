@@ -11,10 +11,9 @@ class TicTacToe:
 
     
     def __init__(self):
-        """creat a blank board of size 3X3 """
+        """creat a blank board of size 3X3 based on requirement"""
         self.board = [[' ', ' ', ' '], [' ', ' ', ' '], [' ', ' ', ' ']]
-        """ randomly select whose turn it is o or x """
-        
+
 
     def place_marker(self, symbol, row, column):
         """assing the given symbol to board with given row,column
@@ -60,7 +59,7 @@ class TicTacToe:
 
     def row_checker(self,board):
         """ check rows if there is a winning combination 
-            and return True and the winner if there is winning combination
+            and return True and the winner if there is winning combination or False
         """
         for i in range(len(board)):
             for j in range(1, len(board)):
@@ -115,7 +114,6 @@ class TicTacToe:
                     return False
         return True
 
-
-   
+       
     
         
